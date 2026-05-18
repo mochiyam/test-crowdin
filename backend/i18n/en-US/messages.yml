@@ -1,0 +1,28 @@
+# English (US) messages for Crowdin / i18n testing (backend).
+# ICU MessageFormat placeholders for variables, plurals, dates, and times.
+
+appTitle: "Crowdin Sample App"
+
+greetingWithName: "Hello, {name}!"
+
+notificationCount: "{count, plural, =0 {No notifications} one {# notification} other {# notifications}}"
+
+tasksRemaining: "{count, plural, one {# task remaining} other {# tasks remaining}}"
+
+guestCount: "{count, plural, one {# guest} other {# guests}}"
+
+presenceLabel: "{status, select, online {Online} away {Away} busy {Busy} offline {Offline} other {Unknown}}"
+
+appointmentOnDateLong: "Your appointment is on {date, date, long}."
+
+clinicOpensAtTime: "Clinic opens at {opensAt, time, short}."
+
+reportGeneratedAt: "Report generated on {generatedOn, date, medium} at {generatedAt, time, medium}."
+
+accountBalanceUsd: "Balance: {balance, number, :: currency/USD}"
+
+welcomeBackSummaries: "Welcome back, {name}. You have {count, plural, one {# unread message} other {# unread messages}}."
+
+lastUpdatedHuman: "Last updated: {relativeLabel}"
+
+storageUsedGb: "{usedGb, number} GB used of {quotaGb, number} GB quota."

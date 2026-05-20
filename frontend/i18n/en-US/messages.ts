@@ -1,49 +1,21 @@
 /**
- * English (US) messages for Crowdin / i18n testing.
- * Uses ICU MessageFormat placeholders for variables, plurals, dates, and times.
+ * 日本語（日本）メッセージ — Crowdin / i18n 検証用。
+ * ICU MessageFormat と同様のプレースホルダーを使用（プラットフォーム側でパース）。
  */
-export const messages = {
+export const messages = ({
+  thisIsNewFromFeature: "This is a new feature",
   appTitle: "Crowdin Sample App",
-
   greetingWithName: "Hello, {name}!",
-
-  /** Pluralization: zero / one / other */
-  notificationCount:
-    "{count, plural, =0 {No notifications} one {# notification} other {# notifications}}",
-
-  /** Plural-only (no zero branch) */
-  tasksRemaining:
-    "{count, plural, one {# task remaining} other {# tasks remaining}}",
-
-  /** Ordinal-style wording (still driven by ICU plural categories) */
+  notificationCount: "{count, plural, =0 {No notifications} one {# notification} other {# notifications}}",
+  tasksRemaining: "{count, plural, one {# task remaining} other {# tasks remaining}}",
   guestCount: "{count, plural, one {# guest} other {# guests}}",
-
-  /** Select variant (e.g. status chips) */
-  presenceLabel:
-    "{status, select, online {Online} away {Away} busy {Busy} offline {Offline} other {Unknown}}",
-
-  /** Date placeholder — formatting resolved by runtime (Intl / formatjs) */
+  presenceLabel: "{status, select, online {Online} away {Away} busy {Busy} offline {Offline} other {Unknown}}",
   appointmentOnDateLong: "Your appointment is on {date, date, long}.",
-
-  /** Time only */
   clinicOpensAtTime: "Clinic opens at {opensAt, time, short}.",
-
-  /** Combined date + time */
-  reportGeneratedAt:
-    "Report generated on {generatedOn, date, medium} at {generatedAt, time, medium}.",
-
-  /** Numbers (decimals, grouping) */
+  reportGeneratedAt: "Report generated on {generatedOn, date, medium} at {generatedAt, time, medium}.",
   accountBalanceUsd: "Balance: {balance, number, :: currency/USD}",
-
-  /** Named params + ICU plural together */
-  welcomeBackSummaries:
-    "Welcome back, {name}. You have {count, plural, one {# unread message} other {# unread messages}}.",
-
-  /** Simple relative-style string — translators can reorder for JA */
+  welcomeBackSummaries: "Welcome back, {name}. You have {count, plural, one {# unread message} other {# unread messages}}.",
   lastUpdatedHuman: "Last updated: {relativeLabel}",
-
-  /** File-style label with numeric param */
-  storageUsedGb: "{usedGb, number} GB used of {quotaGb, number} GB quota.",
-} as const;
-
-export type EnUSMessages = typeof messages;
+  storageUsedGb: "{usedGb, number} GB used of {quotaGb, number} GB quota."
+} as const);
+export type JaJPMessages = typeof messages;

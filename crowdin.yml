@@ -1,9 +1,38 @@
-"project_id_env": "CROWDIN_PROJECT_ID"
-"api_token_env": "CROWDIN_PERSONAL_TOKEN"
+#
+# Basic Crowdin CLI configuration
+# See https://crowdin.github.io/crowdin-cli/configuration for more information
+# See https://support.crowdin.com/developer/configuration-file/ for all available options
+#
 
-files:
-  - source: /frontend/i18n/en-US/**/*
-    translation: /frontend/i18n/%locale%/**/%original_file_name%
+#
+# Your Crowdin credentials
+#
+"project_id": "39"
+"base_path": "."
+"base_url": "https://smarthr.api.crowdin.com"
 
-  - source: /backend/i18n/en-US/**/*
-    translation: /backend/i18n/%locale%/**/%original_file_name%
+#
+# Defines whether to preserve the original directory structure in the Crowdin project
+# Recommended to set to true
+#
+"preserve_hierarchy": true
+
+#
+# Files configuration.
+# See https://support.crowdin.com/developer/configuration-file/ for all available options
+#
+files: [
+  {
+    #
+    # Source files filter
+    # e.g. "/resources/en/*.json"
+    #
+    "source": "/frontend/i18n/ja/**/*",
+
+    #
+    # Translation files filter
+    # e.g. "/resources/%two_letters_code%/%original_file_name%"
+    #
+    "translation": "/frontend/i18n/%locale%/**/%original_file_name%",
+  }
+]

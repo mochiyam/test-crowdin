@@ -35,4 +35,4 @@ export const messages = {
     "合計 {quotaGb, number} GB 中、{usedGb, number} GB を使用中です。",
 } as const;
 
-export type JaJPMessages = typeof messages;
+export type JaJpMessages = typeof messages;

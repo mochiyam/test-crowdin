@@ -1,7 +1,7 @@
 # English (US) messages for Crowdin / i18n testing (backend).
 # ICU MessageFormat placeholders for variables, plurals, dates, and times.
 
-appTitle: "Crowdin Sample App"
+appTitle: "Crowdin Sample App I AM TESTING THIS!!!!!"
 
 greetingWithName: "Hello, {name}!"
 

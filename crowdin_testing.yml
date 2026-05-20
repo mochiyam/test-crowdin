@@ -7,7 +7,7 @@
 #
 # Your Crowdin credentials
 #
-"project_id": "39"
+"project_id": "23"
 "base_path": "."
 "base_url": "https://smarthr.api.crowdin.com"
 
@@ -37,7 +37,6 @@ files: [
       "languages_mapping": {
         "locale": {
           "en-US": "en_us"
-          "ja-easy": "ja_easy"
         }
       }
   }

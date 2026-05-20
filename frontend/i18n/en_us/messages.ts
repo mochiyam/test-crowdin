@@ -46,4 +46,4 @@ export const messages = {
   storageUsedGb: "{usedGb, number} GB used of {quotaGb, number} GB quota.",
 } as const;
 
-export type EnUSMessages = typeof messages;
+export type EnUsMessages = typeof messages;

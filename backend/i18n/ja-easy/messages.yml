@@ -1,5 +1,8 @@
 # やさしい日本語メッセージ — Crowdin / i18n 検証用（backend）
 
+
+thisIsNewFromFeature: "これは新しい機能です",
+
 appTitle: "Crowdin の サンプル アプリ"
 
 greetingWithName: "こんにちは、{name} さん"

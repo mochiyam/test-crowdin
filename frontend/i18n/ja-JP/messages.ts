@@ -3,6 +3,8 @@
  * ICU MessageFormat と同様のプレースホルダーを使用（プラットフォーム側でパース）。
  */
 export const messages = {
+  thisIsNewFromFeature: "これは新しい機能です",
+  
   appTitle: "Crowdin サンプルアプリ",
 
   greetingWithName: "こんにちは、{name}さん",
